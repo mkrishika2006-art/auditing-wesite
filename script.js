@@ -1,14 +1,9 @@
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+const hamburger = document.getElementById("hamburger")
+const navLinks = document.getElementById("nav-links")
 
-anchor.addEventListener('click', function (e) {
+hamburger.addEventListener("click", () => {
 
-e.preventDefault();
+navLinks.classList.toggle("active")
 
-document.querySelector(this.getAttribute('href')).scrollIntoView({
-behavior: 'smooth'
-});
-
-});
-
-});
+})
