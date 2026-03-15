@@ -1,19 +1,57 @@
-@media(max-width:900px){
 
-.services-container{
+
+@media screen and (max-width: 900px){
+
+nav{
 flex-direction:column;
+gap:15px;
 }
 
-.service-box{
-width:100%;
+.nav-links{
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.hero h1{
+font-size:32px;
+}
+
+.hero p{
+font-size:14px;
 }
 
 .about-container{
 flex-direction:column;
+text-align:center;
 }
+
+.about-container img{
+width:100%;
+max-width:320px;
+}
+
+/* Services become vertical */
+
+.services-container{
+grid-template-columns:1fr;
+}
+
+/* Pricing becomes vertical */
+
+.pricing-container{
+grid-template-columns:1fr;
+}
+
+/* Contact stacked */
 
 .contact-container{
 flex-direction:column;
+gap:30px;
+}
+
+section{
+padding:70px 20px;
 }
 
 }
